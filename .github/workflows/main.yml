@@ -18,6 +18,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.samkirkland.com
-        username: ${{ secret.ftp_username }}
+        username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir : /publig_html/production.watch-learn.com/
